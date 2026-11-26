@@ -8,218 +8,314 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Inter', sans-serif; background-color: #FAF9F6; color: #18181B; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #FAF9F6;
+      color: #18181B;
+    }
     .serif { font-family: 'Newsreader', Georgia, serif; }
+    .mono { font-family: 'JetBrains Mono', monospace; }
+    .editorial-grid {
+      background-image: linear-gradient(to right, rgba(24, 24, 27, 0.03) 1px, transparent 1px);
+      background-size: 25% 100%;
+    }
   </style>
 </head>
-<body class="antialiased selection:bg-slate-900 selection:text-white">
+<body class="antialiased selection:bg-stone-900 selection:text-[#FAF9F6]">
 
   <!-- Top Navigation -->
-  <header class="sticky top-0 z-50 bg-[#FAF9F6]/95 backdrop-blur border-b border-stone-200">
-    <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-      <a href="#" class="font-semibold tracking-tight text-stone-900 text-sm uppercase tracking-wider">
-        Synapse <span class="text-stone-400 font-normal">| Business Consulting</span>
+  <header class="sticky top-0 z-50 bg-[#FAF9F6]/90 backdrop-blur-md border-b border-stone-200/90">
+    <div class="max-w-6xl mx-auto px-6 md:px-10 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 text-stone-950">
+        <span class="w-2 h-2 bg-stone-900 inline-block"></span>
+        <span class="text-xs font-semibold uppercase tracking-[0.2em]">Synapse</span>
+        <span class="hidden sm:inline text-xs text-stone-400 font-normal tracking-wider">| Business Consulting</span>
       </a>
-      <nav class="hidden md:flex items-center gap-8 text-sm text-stone-600">
-        <a href="#practice" class="hover:text-stone-950 transition">Practice Areas</a>
-        <a href="#cases" class="hover:text-stone-950 transition">Selected Work</a>
-        <a href="#partners" class="hover:text-stone-950 transition">Leadership</a>
+      <nav class="hidden md:flex items-center gap-9 text-xs font-medium uppercase tracking-[0.14em] text-stone-500">
+        <a href="#practice" class="hover:text-stone-950 transition">Practice</a>
+        <a href="#architecture" class="hover:text-stone-950 transition">Methodology</a>
+        <a href="#cases" class="hover:text-stone-950 transition">Outcomes</a>
+        <a href="#partners" class="hover:text-stone-950 transition">Partners</a>
       </nav>
-      <a href="#contact" class="px-4 py-2 bg-stone-900 hover:bg-stone-800 text-white text-xs font-medium uppercase tracking-wider transition">
-        Schedule Briefing
+      <a href="#contact" class="px-4 py-2 bg-stone-900 hover:bg-stone-800 text-[#FAF9F6] text-xs font-medium uppercase tracking-[0.14em] transition">
+        Briefing
       </a>
     </div>
   </header>
 
-  <!-- Editorial Hero -->
-  <section class="pt-20 pb-16 md:pt-28 md:pb-24 border-b border-stone-200">
-    <div class="max-w-5xl mx-auto px-6">
-      <p class="text-xs font-semibold uppercase tracking-[0.18em] text-stone-500">
-        Boutique Engineering &amp; Margin Governance
-      </p>
-      <h1 class="serif mt-4 text-4xl md:text-6xl font-medium tracking-tight text-stone-950 max-w-4xl leading-[1.08]">
-        Margin visibility, real-time pricing engines, and governed AI agents—built on top of your existing systems.
-      </h1>
-      <p class="mt-6 text-lg text-stone-600 max-w-2xl leading-relaxed">
-        We bridge executive P&amp;L discipline with production software engineering. From deterministic Python quoting and unit-economics engines to multi-agent workflows (LangGraph, MCP, Copilot Studio), we deliver measurable financial control without forcing costly ERP migrations.
-      </p>
-      <div class="mt-9 flex flex-wrap items-center gap-6">
-        <a href="#contact" class="px-6 py-3 bg-stone-900 hover:bg-stone-800 text-white text-sm font-medium transition">
-          Request Preliminary Conversation
-        </a>
-        <a href="#cases" class="text-sm font-medium text-stone-700 hover:text-stone-950 underline underline-offset-4">
-          Review production outcomes &rarr;
-        </a>
+  <!-- Hero Section -->
+  <section class="relative editorial-grid pt-20 pb-20 md:pt-28 md:pb-28 border-b border-stone-200">
+    <div class="max-w-6xl mx-auto px-6 md:px-10">
+      <div class="flex flex-wrap items-center justify-between gap-4 pb-8 border-b border-stone-200/80">
+        <p class="mono text-[11px] uppercase tracking-[0.18em] text-stone-500">
+          Boutique Engineering • Pricing Architecture • Governed AI
+        </p>
+        <p class="mono text-[11px] text-emerald-800 flex items-center gap-2">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+          US &amp; EU Timezone Overlap (GMT-3)
+        </p>
       </div>
 
-      <!-- Clean Typographic Metrics -->
-      <div class="mt-16 pt-10 border-t border-stone-200 grid grid-cols-2 md:grid-cols-4 gap-8">
+      <div class="mt-10 grid lg:grid-cols-12 gap-10 items-end">
+        <div class="lg:col-span-8">
+          <h1 class="serif text-4xl sm:text-5xl md:text-[3.65rem] font-normal tracking-tight text-stone-950 leading-[1.06]">
+            Margin visibility, real-time pricing engines, and governed AI agents—built over your existing systems.
+          </h1>
+        </div>
+        <div class="lg:col-span-4 lg:pb-2">
+          <p class="text-sm text-stone-600 leading-relaxed">
+            We bridge executive P&amp;L discipline with production software engineering—delivering deterministic Python quoting engines, unit-economics models, and multi-agent workflows without forcing costly ERP migrations.
+          </p>
+          <div class="mt-6 flex flex-wrap items-center gap-5">
+            <a href="#contact" class="px-5 py-3 bg-stone-900 hover:bg-stone-800 text-[#FAF9F6] text-xs font-medium uppercase tracking-[0.14em] transition">
+              Schedule Briefing
+            </a>
+            <a href="#cases" class="text-xs font-medium uppercase tracking-[0.12em] text-stone-700 hover:text-stone-950 border-b border-stone-400 pb-0.5 transition">
+              5 Shipped Systems &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Typographic Ledger Strip -->
+      <div class="mt-20 pt-10 border-t border-stone-300/80 grid grid-cols-2 lg:grid-cols-4 gap-8">
         <div>
-          <div class="serif text-3xl md:text-4xl font-semibold text-stone-950">$4B+/mo</div>
-          <p class="mt-1.5 text-xs text-stone-500 leading-relaxed">Dynamic pricing &amp; corporate acquiring TPV scaled across 70+ accounts</p>
+          <div class="mono text-[11px] text-stone-400 uppercase tracking-wider">Acquiring &amp; Pricing</div>
+          <div class="serif mt-1 text-3xl md:text-4xl font-medium text-stone-950">$4B+<span class="text-xl text-stone-500">/mo</span></div>
+          <p class="mt-2 text-xs text-stone-500 leading-relaxed">Monthly TPV scaled across 70+ enterprise accounts with -70% quote SLA</p>
         </div>
         <div>
-          <div class="serif text-3xl md:text-4xl font-semibold text-stone-950">3d &rarr; Live</div>
-          <p class="mt-1.5 text-xs text-stone-500 leading-relaxed">Industrial quoting &amp; net margin simulation turnaround time</p>
+          <div class="mono text-[11px] text-stone-400 uppercase tracking-wider">Industrial CPQ</div>
+          <div class="serif mt-1 text-3xl md:text-4xl font-medium text-stone-950">3d &rarr; Live</div>
+          <p class="mt-2 text-xs text-stone-500 leading-relaxed">Real-time BOM, tax &amp; net margin simulation before proposal sign-off</p>
         </div>
         <div>
-          <div class="serif text-3xl md:text-4xl font-semibold text-stone-950">$5.4M+</div>
-          <p class="mt-1.5 text-xs text-stone-500 leading-relaxed">Direct cash recovered via automated billing &amp; SOX rule guardrails</p>
+          <div class="mono text-[11px] text-stone-400 uppercase tracking-wider">Audit &amp; Recovery</div>
+          <div class="serif mt-1 text-3xl md:text-4xl font-medium text-stone-950">$5.4M+</div>
+          <p class="mt-2 text-xs text-stone-500 leading-relaxed">Direct cash recovered via automated billing &amp; SOX rule guardrails</p>
         </div>
         <div>
-          <div class="serif text-3xl md:text-4xl font-semibold text-stone-950">&lt; 4.0s</div>
-          <p class="mt-1.5 text-xs text-stone-500 leading-relaxed">Parallel 4-agent multimodal inference in zero-retention RAM</p>
+          <div class="mono text-[11px] text-stone-400 uppercase tracking-wider">Multimodal Inference</div>
+          <div class="serif mt-1 text-3xl md:text-4xl font-medium text-stone-950">&lt; 4.0<span class="text-xl text-stone-500">s</span></div>
+          <p class="mt-2 text-xs text-stone-500 leading-relaxed">Parallel 4-agent forensic verdict in volatile zero-retention RAM</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- 01 / Practice Areas -->
-  <section id="practice" class="py-20 border-b border-stone-200">
-    <div class="max-w-5xl mx-auto px-6">
-      <div class="flex flex-col md:flex-row md:items-end justify-between pb-10 border-b border-stone-200">
-        <div>
-          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-stone-400">01 / Practice Areas</p>
-          <h2 class="serif mt-2 text-3xl font-medium text-stone-950">Zero-Migration Analytical &amp; AI Architecture</h2>
+  <section id="practice" class="py-24 border-b border-stone-200">
+    <div class="max-w-6xl mx-auto px-6 md:px-10">
+      <div class="grid lg:grid-cols-12 gap-8 pb-12 border-b border-stone-200">
+        <div class="lg:col-span-7">
+          <p class="mono text-[11px] uppercase tracking-[0.18em] text-stone-400">01 / Practice Areas</p>
+          <h2 class="serif mt-2 text-3xl md:text-4xl font-normal text-stone-950">
+            Three Engineering Practices Built for Financial Precision.
+          </h2>
         </div>
-        <p class="mt-3 md:mt-0 text-sm text-stone-500 max-w-md">
-          Technology is only the visible layer; rigorous cost and rule segregation ensures no distorted numbers reach leadership.
+        <div class="lg:col-span-5 lg:self-end">
+          <p class="text-sm text-stone-600 leading-relaxed">
+            Software is only the visible layer; rigorous cost segregation, deterministic rules, and curated knowledge bases ensure no distorted numbers reach leadership.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-stone-200 pt-12">
+        <div class="pb-10 md:pb-0 md:pr-10 flex flex-col justify-between">
+          <div>
+            <span class="mono text-xs text-stone-400">I.</span>
+            <h3 class="mt-3 text-xl font-medium text-stone-950">Multi-Agent AI &amp; Copilot Studio</h3>
+            <p class="mt-3 text-sm text-stone-600 leading-relaxed">
+              Collaborative agent architectures built on Python, LangGraph, CrewAI, Model Context Protocol (MCP), and Microsoft Copilot Studio—anchored in curated RAG knowledge bases with human-in-the-loop governance to eliminate hallucinations.
+            </p>
+          </div>
+          <div class="mt-8 pt-4 border-t border-stone-200/70 mono text-[11px] text-stone-500">
+            LangGraph • MCP • Copilot Studio • RAG KBs
+          </div>
+        </div>
+
+        <div class="py-10 md:py-0 md:px-10 flex flex-col justify-between">
+          <div>
+            <span class="mono text-xs text-stone-400">II.</span>
+            <h3 class="mt-3 text-xl font-medium text-stone-950">Pricing, CPQ &amp; Unit-Economics Engines</h3>
+            <p class="mt-3 text-sm text-stone-600 leading-relaxed">
+              We replace fragile spreadsheets with centralized Python pricing, quoting, and multi-dimensional P&amp;L engines. Validate BOM inputs, payment terms, tax rules, and true service-line margins in real time without manual timesheets.
+            </p>
+          </div>
+          <div class="mt-8 pt-4 border-t border-stone-200/70 mono text-[11px] text-stone-500">
+            Python Rule Engines • CPQ • Unit P&amp;L • Cost Allocation
+          </div>
+        </div>
+
+        <div class="pt-10 md:pt-0 md:pl-10 flex flex-col justify-between">
+          <div>
+            <span class="mono text-xs text-stone-400">III.</span>
+            <h3 class="mt-3 text-xl font-medium text-stone-950">Multimodal &amp; Data Intelligence Pipelines</h3>
+            <p class="mt-3 text-sm text-stone-600 leading-relaxed">
+              High-throughput data extraction, Whisper audio/document forensics, computer vision verification, and automated B2B market intelligence pipelines backed by PostgreSQL, AWS, and Microsoft Azure.
+            </p>
+          </div>
+          <div class="mt-8 pt-4 border-t border-stone-200/70 mono text-[11px] text-stone-500">
+            Python • PostgreSQL • Apify • Whisper • AWS / Azure
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 / Zero-Migration Architecture Strip -->
+  <section id="architecture" class="py-20 border-b border-stone-200 bg-[#F3F1EC]">
+    <div class="max-w-6xl mx-auto px-6 md:px-10">
+      <div class="max-w-2xl">
+        <p class="mono text-[11px] uppercase tracking-[0.18em] text-stone-500">02 / Architectural Principle</p>
+        <h2 class="serif mt-2 text-3xl font-normal text-stone-950">Zero-Migration Overlay Architecture</h2>
+        <p class="mt-3 text-sm text-stone-600 leading-relaxed">
+          We preserve your existing ERP, accounting ledger, and operational workflows—connecting a clean intelligence and governance layer on top in weeks, not years.
         </p>
       </div>
 
-      <div class="divide-y md:divide-y-0 md:divide-x divide-stone-200 grid md:grid-cols-3 pt-10">
-        <div class="pb-8 md:pb-0 md:pr-8">
-          <div class="text-xs font-mono text-stone-400">01</div>
-          <h3 class="mt-2 text-lg font-semibold text-stone-900">Multi-Agent AI &amp; Copilot Studio</h3>
-          <p class="mt-3 text-sm text-stone-600 leading-relaxed">
-            Production agent teams built on Python, LangGraph, CrewAI, Model Context Protocol (MCP), and Microsoft Copilot Studio—anchored in curated RAG knowledge bases with human-in-the-loop approval gates.
+      <div class="mt-10 grid md:grid-cols-3 gap-px bg-stone-300 border border-stone-300">
+        <div class="bg-[#FAF9F6] p-7">
+          <div class="mono text-[11px] uppercase tracking-wider text-stone-400">Layer 01 • Preserved</div>
+          <h3 class="mt-2 font-medium text-stone-950">Existing Systems &amp; Ledgers</h3>
+          <p class="mt-2 text-xs text-stone-600 leading-relaxed">
+            ERP exports, SQL databases, billing logs, invoices, and legacy spreadsheets remain untouched—zero disruption to daily operations.
           </p>
-          <p class="mt-4 text-xs font-mono text-stone-500">LangGraph • MCP • Copilot Studio • RAG</p>
         </div>
-
-        <div class="py-8 md:py-0 md:px-8">
-          <div class="text-xs font-mono text-stone-400">02</div>
-          <h3 class="mt-2 text-lg font-semibold text-stone-900">Pricing, Quoting &amp; Margin Engines</h3>
-          <p class="mt-3 text-sm text-stone-600 leading-relaxed">
-            We replace disconnected spreadsheets with centralized Python pricing, CPQ, and unit-economics engines. Validate BOM inputs, cost allocation rules, tax logic, and net margins in real time.
+        <div class="bg-[#FAF9F6] p-7">
+          <div class="mono text-[11px] uppercase tracking-wider text-stone-900 font-medium">Layer 02 • Synapse Core</div>
+          <h3 class="mt-2 font-medium text-stone-950">Deterministic Rules &amp; Governed Agents</h3>
+          <p class="mt-2 text-xs text-stone-600 leading-relaxed">
+            Python calculation engines, cost-allocation matrices, tax guardrails, and MCP-connected AI agents anchored in verified business KBs.
           </p>
-          <p class="mt-4 text-xs font-mono text-stone-500">Python Engines • CPQ • Unit P&amp;L • ERP Sync</p>
         </div>
-
-        <div class="pt-8 md:pt-0 md:pl-8">
-          <div class="text-xs font-mono text-stone-400">03</div>
-          <h3 class="mt-2 text-lg font-semibold text-stone-900">Data Pipelines &amp; Competitive Intel</h3>
-          <p class="mt-3 text-sm text-stone-600 leading-relaxed">
-            Automated extraction, field-cost traceability, Whisper audio/document processing, and structured market intelligence pipelines integrated cleanly with PostgreSQL, AWS, and Azure.
+        <div class="bg-[#FAF9F6] p-7">
+          <div class="mono text-[11px] uppercase tracking-wider text-emerald-800 font-medium">Layer 03 • Executive Control</div>
+          <h3 class="mt-2 font-medium text-stone-950">Real-Time Quoting &amp; Margin Visibility</h3>
+          <p class="mt-2 text-xs text-stone-600 leading-relaxed">
+            Instant quote simulators, granular P&amp;L by business line, and auditable decision trails ready for C-level and board review.
           </p>
-          <p class="mt-4 text-xs font-mono text-stone-500">Python • SQL • Apify • Whisper • AWS/Azure</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 02 / Selected Production Outcomes -->
-  <section id="cases" class="py-20 border-b border-stone-200 bg-white">
-    <div class="max-w-5xl mx-auto px-6">
-      <p class="text-xs font-semibold uppercase tracking-[0.18em] text-stone-400">02 / Proven Outcomes</p>
-      <h2 class="serif mt-2 text-3xl font-medium text-stone-950">Selected Engagements &amp; Systems Shipped</h2>
+  <!-- 03 / Selected Production Outcomes (All 5 Cases) -->
+  <section id="cases" class="py-24 border-b border-stone-200 bg-white">
+    <div class="max-w-6xl mx-auto px-6 md:px-10">
+      <div class="flex flex-col md:flex-row md:items-end justify-between pb-12">
+        <div>
+          <p class="mono text-[11px] uppercase tracking-[0.18em] text-stone-400">03 / Proven Outcomes</p>
+          <h2 class="serif mt-2 text-3xl md:text-4xl font-normal text-stone-950">Selected Engagements &amp; Systems Shipped</h2>
+        </div>
+        <p class="mono text-xs text-stone-400 mt-2 md:mt-0">01 — 05 PRODUCTION DEPLOYMENTS</p>
+      </div>
 
-      <div class="mt-12 divide-y divide-stone-200 border-t border-b border-stone-200">
-        <!-- Row 1 -->
-        <div class="py-8 grid md:grid-cols-12 gap-6 items-start">
+      <div class="divide-y divide-stone-200 border-t border-b border-stone-200">
+        <!-- Case 01 -->
+        <article class="py-9 grid md:grid-cols-12 gap-6 items-start">
+          <div class="md:col-span-1 mono text-xs text-stone-400 pt-1">01</div>
           <div class="md:col-span-4">
-            <span class="text-xs font-semibold uppercase tracking-wider text-stone-400">Tier-1 Banking (Itaú Unibanco / Rede)</span>
-            <h3 class="mt-1 text-lg font-semibold text-stone-900">Multi-Agent Engineering Governance via MCP</h3>
-            <p class="mt-2 text-xs font-mono text-emerald-700 font-medium">Millions saved in IT engineering budget</p>
+            <span class="mono text-[11px] uppercase tracking-wider text-stone-400">Tier-1 Banking (Itaú Unibanco / Rede)</span>
+            <h3 class="mt-1.5 text-lg font-medium text-stone-950">Multi-Agent Engineering Governance via MCP</h3>
+            <p class="mt-2.5 mono text-xs text-emerald-800">Millions saved in IT engineering budget</p>
           </div>
-          <div class="md:col-span-8 text-sm text-stone-600 leading-relaxed">
+          <div class="md:col-span-7 text-sm text-stone-600 leading-relaxed">
             Deployed four collaborative Python agents (Discovery, ROI &amp; Feasibility, Architecture &amp; Risk, and Technical Memory) connected via Model Context Protocol (MCP) and grounded in curated RAG business knowledge bases—eliminating specification hallucinations and blocking non-viable scopes before engineering sprints.
           </div>
-        </div>
+        </article>
 
-        <!-- Row 2 -->
-        <div class="py-8 grid md:grid-cols-12 gap-6 items-start">
+        <!-- Case 02 -->
+        <article class="py-9 grid md:grid-cols-12 gap-6 items-start">
+          <div class="md:col-span-1 mono text-xs text-stone-400 pt-1">02</div>
           <div class="md:col-span-4">
-            <span class="text-xs font-semibold uppercase tracking-wider text-stone-400">Industrial Manufacturing • Synapse</span>
-            <h3 class="mt-1 text-lg font-semibold text-stone-900">Real-Time Quoting, Tax &amp; Net Margin Engine</h3>
-            <p class="mt-2 text-xs font-mono text-emerald-700 font-medium">Quote cycle cut from 3 days to real-time</p>
+            <span class="mono text-[11px] uppercase tracking-wider text-stone-400">Industrial Manufacturing • Synapse Engine</span>
+            <h3 class="mt-1.5 text-lg font-medium text-stone-950">Real-Time Quoting, Tax &amp; Net Margin Engine</h3>
+            <p class="mt-2.5 mono text-xs text-emerald-800">Quote cycle cut from 3 days to real-time</p>
           </div>
-          <div class="md:col-span-8 text-sm text-stone-600 leading-relaxed">
+          <div class="md:col-span-7 text-sm text-stone-600 leading-relaxed">
             Unified commercial, engineering, and cost-accounting workflows onto API-driven interfaces backed by a central Python calculation engine. Automatically validates bill-of-materials inputs, multi-tier tax rules, and unit P&amp;L with locked minimum margin guardrails before proposal delivery.
           </div>
-        </div>
+        </article>
 
-        <!-- Row 3 -->
-        <div class="py-8 grid md:grid-cols-12 gap-6 items-start">
+        <!-- Case 03 (Hyperativa Anonymized) -->
+        <article class="py-9 grid md:grid-cols-12 gap-6 items-start">
+          <div class="md:col-span-1 mono text-xs text-stone-400 pt-1">03</div>
           <div class="md:col-span-4">
-            <span class="text-xs font-semibold uppercase tracking-wider text-stone-400">B2B Tech &amp; Loyalty Platform • Synapse</span>
-            <h3 class="mt-1 text-lg font-semibold text-stone-900">Multi-Dimensional P&amp;L &amp; Unit Economics Engine</h3>
-            <p class="mt-2 text-xs font-mono text-emerald-700 font-medium">3,581 ledger entries mapped • Zero-timesheet model</p>
+            <span class="mono text-[11px] uppercase tracking-wider text-stone-400">B2B Tech &amp; Loyalty Platform • Synapse</span>
+            <h3 class="mt-1.5 text-lg font-medium text-stone-950">Multi-Dimensional P&amp;L &amp; Unit Economics Engine</h3>
+            <p class="mt-2.5 mono text-xs text-emerald-800">3,581 ledger entries mapped • Zero-timesheet model</p>
           </div>
-          <div class="md:col-span-8 text-sm text-stone-600 leading-relaxed">
-            Engineered an algorithmic cost-allocation and 14-line managerial P&amp;L engine across 6 business pillars, 10 service lines, and 110+ projects without imposing manual timesheets. Consolidated 3,581 cash ledger entries into 668 deterministic allocation rules—uncovering +$720K in cash-generating units while isolating -$325K in margin-bleeding lines (including cloud hosting costs running at 2x service revenue) to guide immediate repricing.
+          <div class="md:col-span-7 text-sm text-stone-600 leading-relaxed">
+            Engineered an algorithmic cost-allocation and 14-line managerial P&amp;L engine across 6 business pillars, 10 service lines, and 110+ projects without imposing manual timesheets. Consolidated 3,581 cash ledger entries into 668 deterministic allocation rules—uncovering +$720K in cash-generating units while isolating -$325K in margin-bleeding lines (including cloud hosting running at 2x service revenue) to guide immediate repricing.
           </div>
-        </div>
+        </article>
 
-        <!-- Row 4 -->
-        <div class="py-8 grid md:grid-cols-12 gap-6 items-start">
+        <!-- Case 04 -->
+        <article class="py-9 grid md:grid-cols-12 gap-6 items-start">
+          <div class="md:col-span-1 mono text-xs text-stone-400 pt-1">04</div>
           <div class="md:col-span-4">
-            <span class="text-xs font-semibold uppercase tracking-wider text-stone-400">Real-Time Fraud Forensics • CheckGolpe.ai</span>
-            <h3 class="mt-1 text-lg font-semibold text-stone-900">Sub-4s Multimodal Agent Orchestration</h3>
-            <p class="mt-2 text-xs font-mono text-emerald-700 font-medium">&lt; 4s verdict • Zero-retention RAM (GDPR/LGPD)</p>
+            <span class="mono text-[11px] uppercase tracking-wider text-stone-400">Real-Time Fraud Forensics • CheckGolpe.ai</span>
+            <h3 class="mt-1.5 text-lg font-medium text-stone-950">Sub-4s Multimodal Agent Orchestration</h3>
+            <p class="mt-2.5 mono text-xs text-emerald-800">&lt; 4s verdict • Zero-retention RAM (GDPR/LGPD)</p>
           </div>
-          <div class="md:col-span-8 text-sm text-stone-600 leading-relaxed">
+          <div class="md:col-span-7 text-sm text-stone-600 leading-relaxed">
             Engineered a parallel four-agent Python pipeline (Computer Vision OCR, Audio Forensics, Domain/Registry Validator, and Arbiter Judge) processing screenshots, voice notes, and payment slips strictly in volatile RAM with immediate post-verdict disposal.
           </div>
-        </div>
+        </article>
 
-        <!-- Row 5 -->
-        <div class="py-8 grid md:grid-cols-12 gap-6 items-start">
+        <!-- Case 05 -->
+        <article class="py-9 grid md:grid-cols-12 gap-6 items-start">
+          <div class="md:col-span-1 mono text-xs text-stone-400 pt-1">05</div>
           <div class="md:col-span-4">
-            <span class="text-xs font-semibold uppercase tracking-wider text-stone-400">Corporate Acquiring &amp; Pricing</span>
-            <h3 class="mt-1 text-lg font-semibold text-stone-900">Dynamic Pricing &amp; Automated SOX Controls</h3>
-            <p class="mt-2 text-xs font-mono text-emerald-700 font-medium">$40K &rarr; $4B+/mo TPV • $5.4M+ cash recovered</p>
+            <span class="mono text-[11px] uppercase tracking-wider text-stone-400">Corporate Acquiring &amp; Pricing</span>
+            <h3 class="mt-1.5 text-lg font-medium text-stone-950">Dynamic Pricing &amp; Automated SOX Controls</h3>
+            <p class="mt-2.5 mono text-xs text-emerald-800">$40K &rarr; $4B+/mo TPV • $5.4M+ cash recovered</p>
           </div>
-          <div class="md:col-span-8 text-sm text-stone-600 leading-relaxed">
+          <div class="md:col-span-7 text-sm text-stone-600 leading-relaxed">
             Combined predictive elasticity models (Python / AWS SageMaker) with prescriptive rate-recommendation engines and automated billing guardrails—cutting large-account quote SLAs by 70%, reducing SOX audit findings from 14 to 1, and recovering over $5.4M in billing discrepancies.
           </div>
-        </div>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- 03 / Senior Leadership -->
-  <section id="partners" class="py-20 border-b border-stone-200">
-    <div class="max-w-5xl mx-auto px-6">
-      <p class="text-xs font-semibold uppercase tracking-[0.18em] text-stone-400">03 / Senior Leadership</p>
-      <h2 class="serif mt-2 text-3xl font-medium text-stone-950">Direct Partner Execution. No Junior Handoffs.</h2>
-      <p class="mt-3 text-sm text-stone-600 max-w-2xl">
-        Every engagement is architected and delivered directly by our founding partners, combining corporate P&amp;L discipline with hands-on AI and data engineering.
-      </p>
+  <!-- 04 / Senior Leadership -->
+  <section id="partners" class="py-24 border-b border-stone-200">
+    <div class="max-w-6xl mx-auto px-6 md:px-10">
+      <div class="max-w-2xl">
+        <p class="mono text-[11px] uppercase tracking-[0.18em] text-stone-400">04 / Senior Leadership</p>
+        <h2 class="serif mt-2 text-3xl md:text-4xl font-normal text-stone-950">
+          Direct Partner Execution. No Junior Handoffs.
+        </h2>
+        <p class="mt-3 text-sm text-stone-600 leading-relaxed">
+          Every engagement is architected and delivered directly by our founding partners, uniting corporate P&amp;L governance with hands-on AI and data engineering.
+        </p>
+      </div>
 
-      <div class="mt-12 grid md:grid-cols-3 gap-8 border-t border-stone-200 pt-10">
+      <div class="mt-14 grid md:grid-cols-3 gap-10 border-t border-stone-200 pt-10">
         <div>
           <h3 class="text-base font-semibold text-stone-950">Frederico Faccioli</h3>
-          <p class="text-xs font-mono uppercase tracking-wider text-stone-500 mt-0.5">Project Leadership &amp; Analytical Modeling</p>
-          <p class="mt-3 text-sm text-stone-600 leading-relaxed">
+          <p class="mono text-[11px] uppercase tracking-wider text-stone-500 mt-1">Project Leadership &amp; Analytical Modeling</p>
+          <p class="mt-4 text-sm text-stone-600 leading-relaxed">
             FEA-USP alumnus with 16+ years leading pricing, analytics, and financial modeling at tier-1 banking (Itaú). Leads margin architecture, client governance, and business rule precision.
           </p>
         </div>
 
         <div>
           <h3 class="text-base font-semibold text-stone-950">Alexandre Moreno</h3>
-          <p class="text-xs font-mono uppercase tracking-wider text-stone-500 mt-0.5">AI Engineering, Multi-Agent Systems &amp; Data</p>
-          <p class="mt-3 text-sm text-stone-600 leading-relaxed">
+          <p class="mono text-[11px] uppercase tracking-wider text-stone-500 mt-1">AI Engineering, Multi-Agent Systems &amp; Data</p>
+          <p class="mt-4 text-sm text-stone-600 leading-relaxed">
             24+ years in software engineering, data platforms, and dynamic pricing across tier-1 banking (Itaú/Rede, Santander) and manufacturing (Ford). Leads Python/MCP multi-agent systems and cloud simulation engines.
           </p>
         </div>
 
         <div>
           <h3 class="text-base font-semibold text-stone-950">André Saab</h3>
-          <p class="text-xs font-mono uppercase tracking-wider text-stone-500 mt-0.5">B2B Pricing Strategy &amp; Governance</p>
-          <p class="mt-3 text-sm text-stone-600 leading-relaxed">
+          <p class="mono text-[11px] uppercase tracking-wider text-stone-500 mt-1">B2B Pricing Strategy &amp; Governance</p>
+          <p class="mt-4 text-sm text-stone-600 leading-relaxed">
             FGV Master's alumnus with B2B executive specialization at Columbia Business School (NY) and MBA faculty roles (FGV, FIA, ESPM). 15+ years leading B2B pricing and value-chain projects across North America, Europe, and Asia.
           </p>
         </div>
@@ -227,30 +323,35 @@
     </div>
   </section>
 
-  <!-- 04 / Engagement & Contact -->
-  <section id="contact" class="py-20">
-    <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-12 gap-10 items-center">
+  <!-- 05 / Engagement & Footer -->
+  <section id="contact" class="py-24 bg-[#F3F1EC]">
+    <div class="max-w-6xl mx-auto px-6 md:px-10 grid md:grid-cols-12 gap-10 items-center">
       <div class="md:col-span-7">
-        <p class="text-xs font-semibold uppercase tracking-[0.18em] text-stone-400">04 / Engagement Model</p>
-        <h2 class="serif mt-2 text-3xl md:text-4xl font-medium text-stone-950">
+        <p class="mono text-[11px] uppercase tracking-[0.18em] text-stone-500">05 / Engagement Model</p>
+        <h2 class="serif mt-2 text-3xl md:text-4xl font-normal text-stone-950">
           Start with a focused diagnostic or fixed-scope PoC.
         </h2>
-        <p class="mt-4 text-sm text-stone-600 leading-relaxed">
-          We operate under strict NDA protection, beginning with a rapid workflow immersion to deliver an auditable architecture plan or working Python/Copilot prototype in 1 to 2 weeks—with full US &amp; European timezone overlap.
+        <p class="mt-4 text-sm text-stone-600 leading-relaxed max-w-xl">
+          We operate under strict NDA protection, beginning with a rapid workflow immersion to deliver an auditable architecture plan or working Python/Copilot prototype in 1 to 2 weeks.
         </p>
       </div>
-      <div class="md:col-span-5 md:text-right space-y-3">
-        <div>
-          <a href="mailto:alexandre.silva-moreno@outlook.com?subject=Synapse%20Business%20Consulting%20%E2%80%94%20Project%20Inquiry" class="inline-block w-full md:w-auto text-center px-6 py-3.5 bg-stone-900 hover:bg-stone-800 text-white text-sm font-medium transition">
-            Contact Founding Partners
-          </a>
-        </div>
-        <p class="text-xs font-mono text-stone-500">
+      <div class="md:col-span-5 md:text-right">
+        <a href="mailto:alexandre.silva-moreno@outlook.com?subject=Synapse%20Business%20Consulting%20%E2%80%94%20Architecture%20Briefing" class="inline-block w-full md:w-auto text-center px-7 py-4 bg-stone-900 hover:bg-stone-800 text-[#FAF9F6] text-xs font-medium uppercase tracking-[0.16em] transition">
+          Request Architecture Briefing
+        </a>
+        <p class="mt-4 mono text-[11px] text-stone-500">
           synapseconsulting.com.br • São Paulo, Brazil (GMT-3)
         </p>
       </div>
     </div>
   </section>
+
+  <footer class="border-t border-stone-200 py-8 bg-[#FAF9F6]">
+    <div class="max-w-6xl mx-auto px-6 md:px-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-400 mono">
+      <span>&copy; 2026 Synapse Business Consulting. All rights reserved.</span>
+      <span>Multi-Agent AI • CPQ &amp; Margin Engines • Data Architecture</span>
+    </div>
+  </footer>
 
 </body>
 </html>
