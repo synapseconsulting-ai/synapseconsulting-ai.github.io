@@ -39,6 +39,7 @@
       </a>
       <nav class="flex items-center gap-6 sm:gap-9 text-xs font-medium uppercase tracking-[0.14em] text-stone-500">
         <a href="#practice" class="hover:text-stone-950 transition">Practice</a>
+        <a href="#dashboards" class="hover:text-stone-950 transition">Dashboards</a>
         <a href="#cases" class="hover:text-stone-950 transition">Outcomes</a>
         <a href="#partners" class="hover:text-stone-950 transition">Partners</a>
       </nav>
@@ -50,7 +51,7 @@
     <div class="max-w-6xl mx-auto px-6 md:px-10">
       <div class="flex flex-wrap items-center justify-between gap-4 pb-8 border-b border-stone-200/80">
         <p class="mono text-[11px] uppercase tracking-[0.18em] text-stone-500">
-          Multi-agent AI • Shipped AI systems • Unit economics
+          Multi-agent AI • Shipped AI systems • Executive BI &amp; unit economics
         </p>
         <p class="mono text-[11px] text-emerald-800 flex items-center gap-2">
           <span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
@@ -66,11 +67,11 @@
         </div>
         <div class="lg:col-span-4 lg:pb-2">
           <p class="text-sm text-stone-600 leading-relaxed">
-            Too many AI builds stall after the initial demo because engineering ignores product discovery, operational workflows, and P&amp;L rules. We build governed agent pipelines (LangGraph, MCP, Copilot Studio), 0-to-1 AI products, and real-time pricing engines directly on top of your existing stack.
+            Too many AI builds stall after the initial demo because engineering ignores product discovery, operational workflows, and P&amp;L rules. We build governed agent pipelines (LangGraph, MCP, Copilot Studio), 0-to-1 AI products, real-time pricing engines, and executive BI dashboards directly on top of your existing stack.
           </p>
           <div class="mt-6 flex flex-wrap items-center gap-5">
             <a href="#cases" class="text-xs font-medium uppercase tracking-[0.12em] text-stone-700 hover:text-stone-950 border-b border-stone-400 pb-0.5 transition">
-              5 shipped production systems &rarr;
+              6 shipped production systems &rarr;
             </a>
           </div>
         </div>
@@ -151,7 +152,7 @@
             <span class="mono text-xs text-stone-400">III.</span>
             <h3 class="mt-3 text-xl font-medium text-stone-950">Executive dashboards, BI &amp; data pipelines</h3>
             <p class="mt-3 text-sm text-stone-600 leading-relaxed">
-              We turn fragmented spreadsheets, legacy macros, and raw logs into automated ETL pipelines and executive dashboards in Power BI, AWS QuickSight, and Tableau. Built for real-time KPI tracking, working-capital visibility, and automated SOX audit controls over PostgreSQL, AWS, and Azure.
+              We turn fragmented spreadsheets, legacy macros, and raw ERP/GPS logs into automated ETL pipelines and executive dashboards in Power BI, AWS QuickSight, and custom web scoreboards. Built for real-time KPI tracking, working-capital visibility, and automated SOX audit controls over PostgreSQL, AWS, and Azure.
             </p>
           </div>
           <div class="mt-8 pt-4 border-t border-stone-200/70 mono text-[11px] text-stone-500">
@@ -169,7 +170,7 @@
         <p class="mono text-[11px] uppercase tracking-[0.18em] text-stone-500">02 / Architectural principle</p>
         <h2 class="serif mt-2 text-3xl font-normal text-stone-950">Non-invasive overlay architecture</h2>
         <p class="mt-3 text-sm text-stone-600 leading-relaxed">
-          We plug directly into your existing databases, APIs, and business tools via MCP and Python services. You get production AI agents and pricing engines in weeks without migrating your core stack.
+          We plug directly into your existing databases, APIs, and business tools via MCP and Python services. You get production AI agents, pricing engines, and live executive scoreboards in weeks without migrating your core stack or adding duplicate data entry.
         </p>
       </div>
 
@@ -178,7 +179,7 @@
           <div class="mono text-[11px] uppercase tracking-wider text-stone-400">Layer 01 • Untouched</div>
           <h3 class="mt-2 font-medium text-stone-950">Your existing stack &amp; data</h3>
           <p class="mt-2 text-xs text-stone-600 leading-relaxed">
-            PostgreSQL, ERPs, internal APIs, knowledge bases, and billing logs stay intact, with zero downtime and zero disruption to daily operations.
+            PostgreSQL, ERPs, expense/GPS logs, internal APIs, and billing exports stay intact, with zero downtime and zero duplicate data entry.
           </p>
         </div>
         <div class="bg-[#FAF9F6] p-7">
@@ -190,24 +191,189 @@
         </div>
         <div class="bg-[#FAF9F6] p-7">
           <div class="mono text-[11px] uppercase tracking-wider text-emerald-800 font-medium">Layer 03 • Shipped output</div>
-          <h3 class="mt-2 font-medium text-stone-950">Production apps &amp; margin control</h3>
+          <h3 class="mt-2 font-medium text-stone-950">Executive dashboards &amp; margin control</h3>
           <p class="mt-2 text-xs text-stone-600 leading-relaxed">
-            Customer-facing AI workflows, real-time quote simulators, and auditable unit economics ready for users and leadership.
+            Power BI, QuickSight, and read-only web scoreboards giving leadership live unit margins, cash-cycle alerts, and tax simulation.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 03 / Selected Production Outcomes -->
+  <!-- 03 / Executive Dashboards & Telemetry Preview -->
+  <section id="dashboards" class="py-24 border-b border-stone-200 bg-[#FAF9F6]">
+    <div class="max-w-6xl mx-auto px-6 md:px-10">
+      <div class="flex flex-col md:flex-row md:items-end justify-between pb-12 border-b border-stone-200">
+        <div class="max-w-2xl">
+          <p class="mono text-[11px] uppercase tracking-[0.18em] text-stone-400">03 / Executive visibility</p>
+          <h2 class="serif mt-2 text-3xl md:text-4xl font-normal text-stone-950">
+            Live executive scoreboards built over raw ERP and field logs.
+          </h2>
+        </div>
+        <p class="mono text-xs text-stone-500 mt-3 md:mt-0">Power BI • AWS QuickSight • Web Scoreboards</p>
+      </div>
+
+      <!-- 3 Clean Dashboard UI Previews -->
+      <div class="mt-12 grid lg:grid-cols-3 gap-8">
+
+        <!-- Panel 1: Profitability, Warranty Claims & Tax Simulator -->
+        <div class="bg-white border border-stone-200 p-6 flex flex-col justify-between shadow-sm">
+          <div>
+            <div class="flex items-center justify-between border-b border-stone-100 pb-3">
+              <span class="mono text-[10px] uppercase tracking-wider text-stone-400">Board 01 • Unit P&amp;L &amp; Pricing</span>
+              <span class="mono text-[10px] px-2 py-0.5 bg-emerald-50 text-emerald-800 border border-emerald-200">Live Sync</span>
+            </div>
+            <h3 class="mt-4 text-base font-semibold text-stone-950">Contract Margin &amp; Warranty Claims</h3>
+
+            <div class="mt-4 grid grid-cols-2 gap-3">
+              <div class="bg-[#FAF9F6] p-3 border border-stone-200/80">
+                <div class="mono text-[10px] text-stone-400 uppercase">Avg Net Margin</div>
+                <div class="serif text-2xl font-medium text-stone-950 mt-0.5">31.4%</div>
+              </div>
+              <div class="bg-[#FAF9F6] p-3 border border-stone-200/80">
+                <div class="mono text-[10px] text-stone-400 uppercase">Warranty Loss Ratio</div>
+                <div class="serif text-2xl font-medium text-amber-800 mt-0.5">18.2%</div>
+              </div>
+            </div>
+
+            <div class="mt-4 space-y-2 text-xs">
+              <div class="flex items-center justify-between p-2.5 bg-stone-50 border border-stone-200/60">
+                <span class="flex items-center gap-2 text-stone-700"><span class="w-2 h-2 rounded-full bg-emerald-600"></span>Contract #2604 • Full Service</span>
+                <span class="mono font-medium text-emerald-800">+38.4%</span>
+              </div>
+              <div class="flex items-center justify-between p-2.5 bg-stone-50 border border-stone-200/60">
+                <span class="flex items-center gap-2 text-stone-700"><span class="w-2 h-2 rounded-full bg-amber-500"></span>Contract #0016 • Preventive</span>
+                <span class="mono font-medium text-amber-800">+21.8%</span>
+              </div>
+              <div class="flex items-center justify-between p-2.5 bg-stone-50 border border-stone-200/60">
+                <span class="flex items-center gap-2 text-stone-700"><span class="w-2 h-2 rounded-full bg-rose-600"></span>WO #0490 • Long-Haul + 12h</span>
+                <span class="mono font-medium text-rose-700">+6.2%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-5 pt-4 border-t border-stone-200/80 bg-stone-900 text-[#FAF9F6] p-3.5">
+            <div class="mono text-[10px] uppercase tracking-wider text-stone-400">Tax Sensitivity Simulator</div>
+            <div class="mt-1 flex items-center justify-between text-xs">
+              <span>Effective rate: 14.5% &rarr; 20.0%</span>
+              <span class="mono text-emerald-400">Reprice: +6.8%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 2: Collections & Working Capital Aging -->
+        <div class="bg-white border border-stone-200 p-6 flex flex-col justify-between shadow-sm">
+          <div>
+            <div class="flex items-center justify-between border-b border-stone-100 pb-3">
+              <span class="mono text-[10px] uppercase tracking-wider text-stone-400">Board 02 • Cash &amp; Collections</span>
+              <span class="mono text-[10px] px-2 py-0.5 bg-amber-50 text-amber-800 border border-amber-200">3 Alerts</span>
+            </div>
+            <h3 class="mt-4 text-base font-semibold text-stone-950">Billing Pipeline &amp; Receivables Aging</h3>
+
+            <div class="mt-4 grid grid-cols-3 gap-2">
+              <div class="bg-[#FAF9F6] p-2.5 border border-stone-200/80">
+                <div class="mono text-[9px] text-stone-400 uppercase">Unbilled &gt;10d</div>
+                <div class="serif text-lg font-medium text-stone-950 mt-0.5">$82k</div>
+              </div>
+              <div class="bg-[#FAF9F6] p-2.5 border border-stone-200/80">
+                <div class="mono text-[9px] text-stone-400 uppercase">Overdue</div>
+                <div class="serif text-lg font-medium text-rose-700 mt-0.5">$44k</div>
+              </div>
+              <div class="bg-[#FAF9F6] p-2.5 border border-stone-200/80">
+                <div class="mono text-[9px] text-stone-400 uppercase">Avg DSO</div>
+                <div class="serif text-lg font-medium text-stone-950 mt-0.5">42d</div>
+              </div>
+            </div>
+
+            <div class="mt-4 space-y-2.5 text-xs">
+              <div class="p-2.5 border-l-2 border-emerald-600 bg-stone-50">
+                <div class="font-medium text-stone-900">Short-Term / Upfront Tier</div>
+                <div class="text-stone-500 text-[11px] mt-0.5">&lt;12 days cycle • Immediate liquidity</div>
+              </div>
+              <div class="p-2.5 border-l-2 border-amber-500 bg-stone-50">
+                <div class="font-medium text-stone-900">Closed Billing Window (45–60d)</div>
+                <div class="text-stone-500 text-[11px] mt-0.5">Embedded working-capital cost flagged</div>
+              </div>
+              <div class="p-2.5 border-l-2 border-rose-600 bg-stone-50">
+                <div class="font-medium text-stone-900">Delinquency Hold</div>
+                <div class="text-stone-500 text-[11px] mt-0.5">Auto-lock dispatch until prepaid clearance</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-5 pt-3 border-t border-stone-100 mono text-[11px] text-stone-500 flex justify-between">
+            <span>10-day post-repair trigger</span>
+            <span class="text-stone-900 font-medium">42 WOs queued</span>
+          </div>
+        </div>
+
+        <!-- Panel 3: Field Operations & Productive vs. Travel Time -->
+        <div class="bg-white border border-stone-200 p-6 flex flex-col justify-between shadow-sm">
+          <div>
+            <div class="flex items-center justify-between border-b border-stone-100 pb-3">
+              <span class="mono text-[10px] uppercase tracking-wider text-stone-400">Board 03 • Field Telemetry</span>
+              <span class="mono text-[10px] px-2 py-0.5 bg-stone-100 text-stone-700 border border-stone-200">ERP + GPS</span>
+            </div>
+            <h3 class="mt-4 text-base font-semibold text-stone-950">Field Utilization &amp; First-Time Fix</h3>
+
+            <div class="mt-4 grid grid-cols-3 gap-2">
+              <div class="bg-[#FAF9F6] p-2.5 border border-stone-200/80">
+                <div class="mono text-[9px] text-stone-400 uppercase">On-Site vs Road</div>
+                <div class="serif text-lg font-medium text-stone-950 mt-0.5">68% / 32%</div>
+              </div>
+              <div class="bg-[#FAF9F6] p-2.5 border border-stone-200/80">
+                <div class="mono text-[9px] text-stone-400 uppercase">First-Time Fix</div>
+                <div class="serif text-lg font-medium text-emerald-800 mt-0.5">81%</div>
+              </div>
+              <div class="bg-[#FAF9F6] p-2.5 border border-stone-200/80">
+                <div class="mono text-[9px] text-stone-400 uppercase">Avg MTTR</div>
+                <div class="serif text-lg font-medium text-stone-950 mt-0.5">3h 40m</div>
+              </div>
+            </div>
+
+            <!-- Visual Allocation Bar -->
+            <div class="mt-4">
+              <div class="flex justify-between mono text-[10px] text-stone-500 mb-1.5">
+                <span>Productive On-Site (68%)</span>
+                <span>Transit / Idle (32%)</span>
+              </div>
+              <div class="w-full h-2.5 bg-stone-200 flex overflow-hidden">
+                <div class="bg-stone-900 h-full" style="width: 68%"></div>
+                <div class="bg-sky-600 h-full" style="width: 32%"></div>
+              </div>
+            </div>
+
+            <div class="mt-4 space-y-2 text-xs">
+              <div class="p-2.5 bg-stone-50 border border-stone-200/60 flex items-start gap-2">
+                <span class="w-2 h-2 rounded-full bg-amber-500 mt-1 shrink-0"></span>
+                <span class="text-stone-700">WO #0493 • 8h transit + rental car flagged against contract margin</span>
+              </div>
+              <div class="p-2.5 bg-stone-50 border border-stone-200/60 flex items-start gap-2">
+                <span class="w-2 h-2 rounded-full bg-rose-600 mt-1 shrink-0"></span>
+                <span class="text-stone-700">WO #2603 • Rework alert: 4 repeat visits on same unit</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-5 pt-3 border-t border-stone-100 mono text-[11px] text-stone-500 flex justify-between">
+            <span>Expense + GPS matched</span>
+            <span class="text-emerald-800 font-medium">Zero double-entry</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 / Selected Production Outcomes -->
   <section id="cases" class="py-24 border-b border-stone-200 bg-white">
     <div class="max-w-6xl mx-auto px-6 md:px-10">
       <div class="flex flex-col md:flex-row md:items-end justify-between pb-12">
         <div>
-          <p class="mono text-[11px] uppercase tracking-[0.18em] text-stone-400">03 / Proven outcomes</p>
+          <p class="mono text-[11px] uppercase tracking-[0.18em] text-stone-400">04 / Proven outcomes</p>
           <h2 class="serif mt-2 text-3xl md:text-4xl font-normal text-stone-950">Selected engagements and founding partners' track record</h2>
         </div>
-        <p class="mono text-xs text-stone-400 mt-2 md:mt-0">01 to 05 production deployments</p>
+        <p class="mono text-xs text-stone-400 mt-2 md:mt-0">01 to 06 production deployments</p>
       </div>
 
       <div class="divide-y divide-stone-200 border-t border-b border-stone-200">
@@ -275,15 +441,28 @@
             Consolidated 83 legacy routines into 8 structured AWS pipelines (Lambda, S3, EC2) paired with dynamic pricing engines and automated billing guardrails across 210K+ audited transactions. Cut large-account quote SLAs by 70%, reduced SOX audit findings from 14 to 1, and recovered over $5.4M in billing discrepancies.
           </div>
         </article>
+
+        <!-- Case 06 -->
+        <article class="py-9 grid md:grid-cols-12 gap-6 items-start">
+          <div class="md:col-span-1 mono text-xs text-stone-400 pt-1">06</div>
+          <div class="md:col-span-4">
+            <span class="mono text-[11px] uppercase tracking-wider text-stone-400">Medical equipment &amp; field service • Executive BI</span>
+            <h3 class="mt-1.5 text-lg font-medium text-stone-950">Zero-double-entry operational BI &amp; cash-cycle scoreboards</h3>
+            <p class="mt-2.5 mono text-xs text-emerald-800">400+ stalled work orders surfaced • 68% vs. 32% field telemetry</p>
+          </div>
+          <div class="md:col-span-7 text-sm text-stone-600 leading-relaxed">
+            Crossed legacy ERP work orders with GPS travel and expense logs (VExpenses) into executive BI dashboards and a parametric tax sensitivity simulator without altering ERP screens or forcing duplicate data entry. Isolated productive on-site hours from road transit (68% vs. 32%), surfaced 400+ stalled unbilled work orders, and flagged warranty loss ratios and 45-to-60-day payment-term erosion per contract.
+          </div>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- 04 / Senior Leadership (2 Founding Partners) -->
+  <!-- 05 / Senior Leadership (2 Founding Partners) -->
   <section id="partners" class="py-24 border-b border-stone-200">
     <div class="max-w-6xl mx-auto px-6 md:px-10">
       <div class="max-w-2xl">
-        <p class="mono text-[11px] uppercase tracking-[0.18em] text-stone-400">04 / Senior leadership</p>
+        <p class="mono text-[11px] uppercase tracking-[0.18em] text-stone-400">05 / Senior leadership</p>
         <h2 class="serif mt-2 text-3xl md:text-4xl font-normal text-stone-950">
           Direct execution by both partners, with no junior handoffs.
         </h2>
@@ -312,11 +491,11 @@
     </div>
   </section>
 
-  <!-- 05 / Engagement Model -->
+  <!-- 06 / Engagement Model -->
   <section id="contact" class="py-24 bg-[#F3F1EC]">
     <div class="max-w-6xl mx-auto px-6 md:px-10 grid md:grid-cols-12 gap-10 items-center">
       <div class="md:col-span-7">
-        <p class="mono text-[11px] uppercase tracking-[0.18em] text-stone-500">05 / Engagement model</p>
+        <p class="mono text-[11px] uppercase tracking-[0.18em] text-stone-500">06 / Engagement model</p>
         <h2 class="serif mt-2 text-3xl md:text-4xl font-normal text-stone-950">
           Start with a focused architecture discovery or working PoC.
         </h2>
@@ -335,7 +514,7 @@
   <footer class="border-t border-stone-200 py-8 bg-[#FAF9F6]">
     <div class="max-w-6xl mx-auto px-6 md:px-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-400 mono">
       <span>&copy; 2026 MF Labs (Moreno &amp; Faccioli). All rights reserved.</span>
-      <span>Multi-agent AI • 0-to-1 AI systems • CPQ &amp; margin engines</span>
+      <span>Multi-agent AI • 0-to-1 AI systems • CPQ &amp; executive BI</span>
     </div>
   </footer>
 
